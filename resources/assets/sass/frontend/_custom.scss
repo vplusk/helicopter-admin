@@ -1,1 +1,113 @@
 // Override the Bootstrap defaults without modifying key, versioned files.
+$green: #20aa97;
+$grey: #585858;
+
+* {
+  font-family: 'ProximaNova';
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flex {
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  li {
+    list-style-type: none;
+    margin-left: 1em;
+    &:first-child {
+      margin-left: 0;
+    } 
+  }
+}
+
+h1.title {  
+  line-height: 1;
+  text-align: center;
+  text-transform: lowercase;  
+  font-family: 'ProximaNovaExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 3.75rem;
+  margin-top: 7rem;
+}
+
+.heading-title {
+  font-size: 6.25rem !important;
+}
+
+.heading-subtitle {
+  margin-top: 7rem;
+  color: $grey;
+  text-align: center;
+  font-family: 'ProximaNovaExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.dot {
+  &:after {
+    content: '.';
+    color: $green;
+  }
+}
+
+.services {
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.service-item {
+  margin-top: 7rem;
+  text-align: center;
+  width: 18%;
+
+  
+}
+.service-text {
+  line-height: 1.3;
+  font-size: 1.125rem;
+  .strong {
+    font-family: 'ProximaNovaExtraBold', Arial, Helvetica, sans-serif;
+  }
+}
+
+.offers-wrap {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;  
+  
+}
+
+.offer-item {
+  margin-top: 5rem;
+  width: 45%;
+}
+
+.offer-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #000;
+}
+
+.offer-text {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: $grey;
+}
+
+footer {
+  padding: 3em 0;
+  font-size: 14px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}

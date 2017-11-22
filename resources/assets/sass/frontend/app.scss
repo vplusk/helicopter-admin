@@ -1,19 +1,17 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
 
 // Font Awesome
-@import "../../../../node_modules/font-awesome/scss/font-awesome";
+@import '../../../../node_modules/font-awesome/scss/font-awesome';
 
 // Bootstrap Overrides
-@import "custom";
-
-// Bootstrap
-@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import 'custom';
 
 // Global
-@import "global";
+@import 'global';
 
 // Pages
-@import "pages/dashboard";
+@import 'pages/dashboard';
 
-// Plugins
+// Fonts
+@import 'fonts';
