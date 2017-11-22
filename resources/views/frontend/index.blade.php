@@ -6,7 +6,7 @@
         <div class="container">
             <div class="head flex">
                 <a href="" class="logo">
-                    <img class="main-logo" src="img/svg/logo.svg" alt="Logo" title="Logo">
+                    <img class="main-logo" src="img/svg/logo.svg" >
                     <span class="logo-title">helicopter <br>view</span>
                 </a>
                 <div class="main-menu">                    
@@ -96,33 +96,32 @@
         </div>
         <div class="offer">
             <h1 class="title dot offer-title">Our offer</h1>
-            <div class="offers-wrap flex">
+            <div class="offers flex">
                 <div class="offer-item">
                     <div class="offer-icon"></div>                    
                     <h3 class="offer-title">100% Clear-Cut heat</h3>
                     <p class="offer-text">We only identify companies that precisely match your brief, because we underttake comprehensive
                     market research, wte take every detail of your strategy into account and provide sustainable and
                     efficient deal execution</p>
-                    </div>
+                    
                 </div>
                 <div class="offer-item">
-                    <div class="offer-icon"></div>
-                    <div class="offer-text">
-                        <h3 class="offer-title">100% Clear-Cut heat</h3>
-                        <p>We only identify companies that precisely match your brief, because we underttake comprehensive
-                        market research, wte take every detail of your strategy into account and provide sustainable and
-                        efficient deal execution</p>
-                    </div>
+                    <div class="offer-icon"></div>                    
+                    <h3 class="offer-title">100% Clear-Cut heat</h3>
+                    <p class="offer-text">We only identify companies that precisely match your brief, because we underttake comprehensive
+                    market research, wte take every detail of your strategy into account and provide sustainable and
+                    efficient deal execution</p>
+                    
                 </div>
                 <div class="offer-item">
-                    <div class="offer-icon"></div>
-                    <div class="offer-text">
-                        <h3 class="offer-title">100% Clear-Cut heat</h3>
-                        <p>We only identify companies that precisely match your brief, because we underttake comprehensive
-                        market research, wte take every detail of your strategy into account and provide sustainable and
-                        efficient deal execution</p>
-                    </div>
+                    <div class="offer-icon"></div>                    
+                    <h3 class="offer-title">100% Clear-Cut heat</h3>
+                    <p class="offer-text">We only identify companies that precisely match your brief, because we underttake comprehensive
+                    market research, wte take every detail of your strategy into account and provide sustainable and
+                    efficient deal execution</p>
+                    
                 </div>
+                
             </div>
         </div>
     </div>

@@ -3076,6 +3076,22 @@
       flex-wrap: wrap;
 }
 
+.logo {
+  text-decoration: none;
+}
+
+.logo-title {
+  font-family: 'ProximaNovaExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.logo-title:after {
+  content: '.';
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3085,10 +3101,39 @@
 .menu li {
   list-style-type: none;
   margin-left: 1em;
+  position: relative;
+  padding-top: 5px;
 }
 
 .menu li:first-child {
   margin-left: 0;
+}
+
+.menu li a {
+  font-family: 'ProximaNovaExtraBold', Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu li a:after {
+  content: '.';
+}
+
+.menu li .active,
+.menu li:hover {
+  color: #20aa97;
+}
+
+.menu li .active:before,
+.menu li:hover:before {
+  background-color: #000;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 2px;
 }
 
 h1.title {
@@ -3144,7 +3189,7 @@ h1.title {
   font-family: 'ProximaNovaExtraBold', Arial, Helvetica, sans-serif;
 }
 
-.offers-wrap {
+.offers {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
