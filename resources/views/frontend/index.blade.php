@@ -131,12 +131,7 @@
             <span>Design and development — <a href="#" class="link-development">Sponge D&D</a>.</span>
         </div>
     </footer>
-
-    <div class="row mb-4">
-        <div class="col">
-            <example-component></example-component>
-        </div><!--col-->
-    </div><!--row-->
+    
 
     
 @endsection

@@ -28,10 +28,11 @@
             @include('frontend.includes.nav')
 
             <div class="container">
-                @include('includes.partials.messages')                
+                @include('includes.partials.messages')
+                <!-- container -->
+                @yield('content')
             </div>
-            <!-- container -->
-            @yield('content')
+            
         </div><!-- #app -->
 
         <!-- Scripts -->
