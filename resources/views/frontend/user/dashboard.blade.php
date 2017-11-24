@@ -11,8 +11,8 @@
                 </div><!--card-header-->
 
                 <div class="card-body">
-                    <div class="row">
-                        <!--
+                    <div class="row">                        
+                        
                         <div class="col col-sm-4 order-1 order-sm-2  mb-4">
                             <div class="card mb-4 bg-light">
                                 <img class="card-img-top" src="{{ $logged_in_user->picture }}" alt="Profile Picture">
@@ -42,9 +42,11 @@
                                         @endcan
                                     </p>
                                 </div>
-                            </div>                            
-                        </div> -->                        
-
+                            </div>                           
+                        </div>      
+                        <div class="col col-sm-4 order-2">
+                            <a href="{{ route('service.index')}}">Services</a>                            
+                        </div>     
                         
                     </div><!-- row -->
                 </div> <!-- card-body -->
@@ -52,3 +54,4 @@
         </div><!-- row -->
     </div><!-- row -->
 @endsection
+

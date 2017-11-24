@@ -16,6 +16,13 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     include_route_files(__DIR__.'/frontend/');
 });
 
+Route::resource('dashboard/service', 'ServiceController');
+Route::get('dashboard/service/{service}/confirm', ['as' => 'service.confirm', 'uses' => 'ServiceController@confirm']);
+
+Route::put('index_data', ['as' => 'index_data.update', 'uses' => 'IndexDataController@update']);
+
+//Route::put('service', ['as' => 'service.update', 'uses' => 'DashboardController@serviceUpdate']);
+Route::put('offer', ['as' => 'offer.update', 'uses' => 'DashboardController@offerUpdate']);
 /*
  * Backend Routes
  * Namespaces indicate folder structure
