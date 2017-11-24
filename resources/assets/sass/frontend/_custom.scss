@@ -23,11 +23,16 @@ $black: #000;
 
 .logo {
   text-decoration: none;
+  &:hover {
+    text-decoration: none !important;
+  }
 }
 
 .logo-title {
+  display: block;
   font-family: 'ProximaNovaExtraBold', Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
+  max-width: 20px;
   color: $black;
   text-align: left;
   text-transform: lowercase;
