@@ -45,7 +45,9 @@
                             </div>                           
                         </div>      
                         <div class="col col-sm-4 order-2">
-                            <a href="{{ route('service.index')}}">Services</a>                            
+                            <p><a href="{{ route('index_data.index')}}">Main</a></p>
+                            <p><a href="{{ route('service.index')}}">Services</a></p>
+                            <p><a href="{{ route('offer.index')}}">Offers</a></p>
                         </div>     
                         
                     </div><!-- row -->
