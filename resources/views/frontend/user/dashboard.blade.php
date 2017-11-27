@@ -11,6 +11,13 @@
                 </div><!--card-header-->
 
                 <div class="card-body">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div id="vue">
+                                <app></app>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">                        
                         
                         <div class="col col-sm-4 order-1 order-sm-2  mb-4">
@@ -44,11 +51,7 @@
                                 </div>
                             </div>                           
                         </div>      
-                        <div class="col col-sm-4 order-2">
-                            <p><a href="{{ route('index_data.index')}}">Main</a></p>
-                            <p><a href="{{ route('service.index')}}">Services</a></p>
-                            <p><a href="{{ route('offer.index')}}">Offers</a></p>
-                        </div>     
+                        
                         
                     </div><!-- row -->
                 </div> <!-- card-body -->

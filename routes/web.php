@@ -16,13 +16,17 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     include_route_files(__DIR__.'/frontend/');
 });
 
-Route::resource('dashboard/service', 'ServiceController');
-Route::resource('dashboard/offer', 'OfferController');
-Route::get('dashboard/service/{service}/confirm', ['as' => 'service.confirm', 'uses' => 'ServiceController@confirm']);
-Route::get('dashboard/offer/{offer}/confirm', ['as' => 'offer.confirm', 'uses' => 'OfferController@confirm']);
+// Route::resource('dashboard/service', 'ServiceController');
+// Route::resource('dashboard/offer', 'OfferController');
+// Route::get('dashboard/service/{service}/confirm', ['as' => 'service.confirm', 'uses' => 'ServiceController@confirm']);
+// Route::get('dashboard/offer/{offer}/confirm', ['as' => 'offer.confirm', 'uses' => 'OfferController@confirm']);
 
-Route::get('dashboard/index_data', ['as' => 'index_data.index', 'uses' => 'IndexDataController@index']);
-Route::put('dashboard/index_data', ['as' => 'index_data.update', 'uses' => 'IndexDataController@update']);
+// Route::get('dashboard/index_data', ['as' => 'index_data.index', 'uses' => 'IndexDataController@index']);
+// Route::put('dashboard/index_data', ['as' => 'index_data.update', 'uses' => 'IndexDataController@update']);
+
+Route::any('dashboard/{all}', function () {
+    return view('frontend.user.dashboard');
+})->where(['all' => '.*']);
 
 //Route::put('service', ['as' => 'service.update', 'uses' => 'DashboardController@serviceUpdate']);
 //Route::put('offer', ['as' => 'offer.update', 'uses' => 'DashboardController@offerUpdate']);

@@ -61,6 +61,6 @@
         </div>
     </footer>
     
-
+    <div id="app"></div>
     
 @endsection
