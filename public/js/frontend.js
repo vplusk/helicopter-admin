@@ -1664,6 +1664,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__("./node_modules/axios/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 //
 //
 //
@@ -1698,6 +1700,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'app',
@@ -1705,18 +1708,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         console.log('Main data mounted.');
     },
 
-    methods: {
-        updateData: function updateData() {
-            // const formData = {
-            //     name: this.name,                    
-            // };
+    data: function data() {
+        return { post: { title: '', body: '' } };
+    },
+    created: function created() {
+        var _this = this;
 
-            // this.$store.dispatch('updateProfileRequest', formData)
-            //         .then(() => {
-            //             this.$router.push({name: 'profile'});
-            //         })
-            //         .catch(() => {});
-        }
+        var uri = '/dashboard/index_data';
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(uri).then(function (response) {
+            _this.main_data = response.data;
+            console.log(_this.main_data);
+        });
+    },
+    methods: {
+        updateData: function updateData() {}
     }
 });
 
@@ -2551,19 +2556,19 @@ var render = function() {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.site_name,
-                expression: "site_name"
+                value: _vm.main_data.site_name,
+                expression: "main_data.site_name"
               }
             ],
             staticClass: "form-control",
             attrs: { type: "text", id: "site_name" },
-            domProps: { value: _vm.site_name },
+            domProps: { value: _vm.main_data.site_name },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.site_name = $event.target.value
+                _vm.$set(_vm.main_data, "site_name", $event.target.value)
               }
             }
           })

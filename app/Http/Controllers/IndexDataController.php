@@ -21,9 +21,9 @@ class IndexDataController extends Controller
    */
   public function index()
   {
-    $index_data = $this->index_data->first();
+    return $index_data = $this->index_data->first();
       
-    return view('frontend.user.index_data.form')->with('index_data', $index_data);
+    //return view('frontend.user.index_data.form')->with('index_data', $index_data);
       
   }
 

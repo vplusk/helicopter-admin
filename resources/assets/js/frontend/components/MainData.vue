@@ -5,7 +5,7 @@
       <form @submit.prevent="updateData()">
           <div class="form-group" >
               <label class="control-label" for="name">Site Name</label>
-              <input type="text" class="form-control" id="site_name" v-model="site_name">              
+              <input type="text" class="form-control" id="site_name" v-model="main_data.site_name">              
           </div>
           <!--
           <div class="form-group" :class="{ 'has-error' : errors.email}">
@@ -32,11 +32,22 @@
     </div>
 </template>
 
-<script>    
+<script>
+    import axios from 'axios';
     export default {
         name: 'app',
         mounted() {
             console.log('Main data mounted.')
+        },
+        data: function () {
+            return {post: {title: '', body: ''}}
+        },
+        created: function(){
+            let uri = '/dashboard/index_data';
+            axios.get(uri).then((response) => {
+                this.main_data = response.data;
+                console.log(this.main_data);
+            });
         },
         methods: {
           updateData() {                
